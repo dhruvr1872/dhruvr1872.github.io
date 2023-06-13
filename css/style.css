@@ -391,6 +391,10 @@ a:focus {
         padding: 10px 15px;
         letter-spacing: 1px;
     }
+    .hero { 
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 }
 
 @media (max-width: 575.98px) {
