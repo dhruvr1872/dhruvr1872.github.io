@@ -1,9 +1,6 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
-* {
-    overflow-x: hidden;
-}
 body {
     color: #797979;
     background: #ffffff;
@@ -364,6 +361,9 @@ a:focus {
 }
 
 @media (max-width: 767.98px) {
+    *{
+        max-width: 100%;
+    }
     .hero {
         padding-top: 60px;
         padding-bottom: 60px;
