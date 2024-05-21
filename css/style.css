@@ -751,6 +751,14 @@ a:focus {
     overflow: hidden;
 }
 
+@media only screen and (max-width: 767px) {
+    .portfolio-item {
+        width: 100%; /* Makes each tile full width */
+        margin-bottom: 20px; /* Adds space between rows */
+    }
+}
+
+
 .portfolio .portfolio-img img {
     position: relative;
     width: 100%; 
@@ -783,6 +791,12 @@ a:focus {
     white-space: nowrap;
     overflow: hidden;
 }
+ 
+.portfolio-img img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .portfolio .portfolio-text a.btn {
     width: 50px;
