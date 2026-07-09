@@ -132,7 +132,7 @@
             RAG pipelines, autonomous agents, and distributed scraping systems that handle real scale.
           </p>
           <p class="about-text">
-            Previously Lead Backend Engineer at Nora Music, where I cut album ingestion from 60 to 5 minutes,
+            Previously Lead Backend Engineer at Nora Music, where I cut album ingestion from 45 to 5 minutes (9×),
             and built internal tooling at Altius Consulting and infrastructure automation at BlackRock.
             I care about systems that make data actually usable and processes that run without humans watching them.
           </p>
@@ -175,7 +175,7 @@
             <div class="skill-tag-group">
               <span>AWS EC2</span><span>Lambda</span><span>S3</span>
               <span>GCP</span><span>Azure</span><span>MongoDB</span>
-              <span>PostgreSQL</span><span>Airflow</span>
+              <span>PostgreSQL</span><span>Airflow</span><span>SQLAlchemy</span>
             </div>
           </div>
         </div>
@@ -187,8 +187,8 @@
             <h4>AI / ML</h4>
             <div class="skill-tag-group">
               <span>LLMs</span><span>LangChain</span><span>LangGraph</span>
-              <span>RAG</span><span>ChromaDB</span><span>NLP</span>
-              <span>TensorFlow</span><span>PyTorch</span><span>NER</span>
+              <span>RAG</span><span>ChromaDB</span><span>Tavily</span>
+              <span>NLP</span><span>NER</span><span>TensorFlow</span><span>PyTorch</span>
             </div>
           </div>
         </div>
@@ -228,9 +228,9 @@
             <h3 class="tl-role">Data & AI Engineer</h3>
             <h4 class="tl-company">Global Action Alliance</h4>
             <ul class="tl-bullets">
-              <li>Built distributed data ingestion pipelines on AWS EC2 using Python services to scrape, clean, and normalize data from multiple external sources</li>
+              <li>Built distributed data ingestion pipelines on AWS EC2 using Python (Selenium, BeautifulSoup) to scrape and normalize clinical trial data, <strong>cutting manual collection time by 90%</strong></li>
               <li>Designed ETL workflows with RAG-powered modules and domain-specific embeddings to generate structured intelligence from SEC filings, <strong>cutting manual research time by 80%</strong></li>
-              <li>Engineered an autonomous LLM-powered agent to research <strong>400K+ healthcare companies</strong> across 30+ fields spanning technology, financials, and operations</li>
+              <li>Engineered an autonomous LLM-powered agent (NLP, NER) to research <strong>400K+ healthcare companies</strong> across 30+ data fields — compressing profiling from hours to a single click</li>
             </ul>
             <div class="tl-tags">
               <span>Python</span><span>AWS EC2</span><span>RAG</span><span>LLMs</span><span>MongoDB</span><span>ETL</span>
@@ -247,9 +247,9 @@
             <h3 class="tl-role">Lead Backend Engineer</h3>
             <h4 class="tl-company">Nora Music</h4>
             <ul class="tl-bullets">
-              <li>Developed backend architecture using Python, integrating third-party APIs and LLMs for data cleaning, structuring, and storage in Planetscale SQL</li>
-              <li>Optimized album ingestion time <strong>from 60 to 5 minutes</strong> by designing a parallelized scraping system deployed across AWS EC2 instances and Lambda functions</li>
-              <li>Contributed to CI/CD-driven development via Agile sprints (Linear, Notion)</li>
+              <li>Improved song metadata accuracy from <strong>40% to 85%</strong> using GPT-4/Gemini LLM validation across Spotify, Genius, and MusicBrainz APIs for 200K+ tracks</li>
+              <li>Re-architected album ingestion pipeline with ScrapingBee + parallel AWS Lambdas, <strong>cutting ingestion from 45 to 5 minutes (9× speedup)</strong></li>
+              <li>Built Python backend storing structured data in Planetscale SQL; shipped features in weekly Agile sprints via Linear and Notion</li>
             </ul>
             <div class="tl-tags">
               <span>Python</span><span>AWS EC2</span><span>Lambda</span><span>LLMs</span><span>Planetscale</span>
@@ -284,7 +284,7 @@
             <h3 class="tl-role">Software Analyst</h3>
             <h4 class="tl-company">BlackRock</h4>
             <ul class="tl-bullets">
-              <li>Automated Azure server uptime monitoring using Java + Spring, <strong>cutting manual check times by 90%</strong></li>
+              <li>Automated Azure server health monitoring using Java + Spring pinger architecture, <strong>cutting detection time from 4 hours to 2 minutes</strong></li>
               <li>Implemented Apache Freemarker for backend-to-frontend data flow; shipped to production</li>
             </ul>
             <div class="tl-tags">
