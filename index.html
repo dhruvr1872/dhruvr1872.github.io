@@ -1,380 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Dhruv's Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Dhruv's Personal Portfolio" name="keywords">
-        <meta content="Software Engineer" name="description">
+<head>
+  <meta charset="utf-8">
+  <title>Dhruv Rajgarhia — Data & AI Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dhruv Rajgarhia — Data & AI Engineer. Building LLM pipelines, RAG systems, and data infrastructure that works at scale.">
+  <meta name="keywords" content="Data Engineer, AI Engineer, LLM, RAG, Python, AWS">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+  <!-- Animate.css -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">Hi It's Dhruv</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#experience" class="nav-item nav-link">Experience</a>
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                        <a href="#footer" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
+<body data-spy="scroll" data-target="#mainNav" data-offset="80">
+
+  <!-- Loader -->
+  <div id="loader" class="show"><div class="loader-spin"></div></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">DR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse" aria-label="Toggle navigation">
+        <span class="nav-toggle-icon"><span></span><span></span><span></span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-cta" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-grid"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center min-vh-100 py-5">
+        <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+          <p class="hero-eyebrow">Hello, I'm</p>
+          <h1 class="hero-name">Dhruv Rajgarhia</h1>
+          <h2 class="hero-role"></h2>
+          <!-- Hidden typed strings -->
+          <span class="typed-strings" style="display:none">Data &amp; AI Engineer, LLM Pipeline Builder, RAG Systems Developer, Backend Data Engineer</span>
+          <p class="hero-sub">
+            Building production LLM systems, RAG pipelines, and distributed data infrastructure at scale.
+            Currently at <span class="hero-highlight">Global Action Alliance</span>. Based in Houston, TX.
+          </p>
+          <div class="hero-actions">
+            <a href="assets/Dhruv_Rajgarhia_Resume.pdf" class="btn-hero btn-hero-primary" download>
+              <i class="fas fa-download"></i> Resume
+            </a>
+            <a href="mailto:dhruvrajgarhia2@gmail.com" class="btn-hero btn-hero-outline">
+              <i class="fas fa-envelope"></i> Email Me
+            </a>
+            <a href="https://linkedin.com/in/dhruvrajgarhia2" target="_blank" class="btn-hero btn-hero-icon" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/dhruvr1872" target="_blank" class="btn-hero btn-hero-icon" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="stats-strip wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="stat-item">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="stat-item">
+            <span class="stat-num">80%</span>
+            <span class="stat-label">Research Time Saved</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="stat-item">
+            <span class="stat-num">400K+</span>
+            <span class="stat-label">Companies Automated</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section section-white">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-4 text-center wow fadeInLeft" data-wow-delay="0.1s">
+          <div class="about-photo-wrap">
+            <img src="img/My picture.jpeg" alt="Dhruv Rajgarhia" class="about-photo">
+          </div>
+        </div>
+        <div class="col-lg-7 offset-lg-1 wow fadeInRight" data-wow-delay="0.2s">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">Building AI systems that actually ship</h2>
+          <p class="about-text">
+            CS + Physics grad from UIUC (3.9 GPA), currently building LLM-powered data infrastructure at
+            Global Action Alliance. My work sits at the intersection of data engineering and AI — designing
+            RAG pipelines, autonomous agents, and distributed scraping systems that handle real scale.
+          </p>
+          <p class="about-text">
+            Previously Lead Backend Engineer at Nora Music, where I cut album ingestion from 60 to 5 minutes,
+            and built internal tooling at Altius Consulting and infrastructure automation at BlackRock.
+            I care about systems that make data actually usable and processes that run without humans watching them.
+          </p>
+          <div class="about-pills">
+            <span><i class="fas fa-map-marker-alt"></i> Houston, TX</span>
+            <span><i class="fas fa-graduation-cap"></i> UIUC '23</span>
+            <span><i class="fas fa-briefcase"></i> Open to roles</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header text-center wow fadeInUp" data-wow-delay="0.1s">
+        <div class="section-label">Tech Stack</div>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="fas fa-code"></i>
             </div>
-        </div>
-        <!-- Nav Bar End -->
-
-
-        <!-- Hero Start -->
-        <div class="hero" id="home">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
-
-                        <div class="hero-content">
-                            <div class="hero-text">
-                                <p>I'm</p>
-                                <h1>Dhruv Rajgarhia</h1>
-                                <h2></h2>
-                                <div class="typed-text">Software Engineer, Full Stack Developer, Web Developer, Front End Developer, Apps Developer, Backend Developer, Data Analyst</div>
-                            </div>
-                            <div class="hero-btn">
-                                <a class="btn" href="https://www.linkedin.com/in/dhruvr4/" target="_blank">Hire Me</a>
-                                <a class="btn" href="https://www.linkedin.com/in/dhruvr4/" target="_blank">Contact Me</a>
-                                <a class="btn" href="https://www.linkedin.com/in/dhruvr4/" target="_blank">Want to collaborate</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <h4>Languages</h4>
+            <div class="skill-tag-group">
+              <span>Python</span><span>JavaScript</span><span>Java</span>
+              <span>SQL</span><span>C++</span><span>C</span><span>HTML/CSS</span>
             </div>
+          </div>
         </div>
-        <!-- Hero End -->
-
-
-        <!-- About Start -->
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="img/My picture.jpeg" alt="Image">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <div class="section-header text-left">
-                                <h2>Learn About Me</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    👋🏽 Hi, my name is Dhruv Rajgarhia
-                                    <br><br>
-                                    🎓 University of Illinois at Urbana Champaign graduate with a Bachelor's in Computer Science, Bachelor's in Physics and Technical Engineering Certificate
-                                    <br><br>
-                                    🌇 Currently in Houston, working at Global Action Alliance and Altius
-                                    <br><br>
-                                    💻 Software Developer with five years of experience, adept in Python, Java, and JavaScript, and proficient in frontend frameworks like React and Angular. My expertise extends to managing databases with SQL and MongoDB, and developing robust Java tools using Spring. Leveraging cloud technologies such as AWS, GCP, and Azure, I enhance project scalability and performance. In the realm of data science, I delve into artificial intelligence and machine learning to predict and innovate. Embracing Agile methodologies, I thrive in collaborative environments that fuel innovation.
-                                    <br><br>
-                                    🏔 In my free time you can find me hiking, playing pickleball or watching basketball
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.15s">
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="fab fa-aws"></i>
             </div>
-        </div>
-        <!-- About End -->
-        
-         <!-- Experience Start -->
-        <div class="experience" id="experience">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Resume</p>
-                    <h2>Working Experience</h2>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">September 2023 - Present</div>
-                            <h2>Software Developer</h2>
-                            <h4>Global Action Alliance, Inc</h4>
-                            <p>
-                                Front End:<br>
-- Developed an efficient healthcare dashboard with ES6+ React.js (Hooks), integrating AWS S3 for data storage and Node.js for seamless backend communication, significantly enhancing data handling and user experience<br>
- - Boosted user engagement by 25% by leading the design of a responsive healthcare dashboard using React.js, which improved UI/UX <br>
- - Enhanced UI/UX by engineering advanced search and filtering functionalities for clinical trial information pages using JavaScript, CSS, and HTML<br><br>
- Data Science:<br>
- - Streamlined technology identification and verification time by 80% using an NLP-driven patent analysis pipeline utilizing Amazon Comprehend, AWS 
- EC2 and AWS S3 storage<br>
- - Enhanced decision-making accuracy by 40% on Python and Selenium web scraping projects ran on AWS EC2 instances, enriching our AWS S3 database<br>
- - Used AWS S3 for storage and management ensuring access and accuracy of information for all teams
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">June 2022 - August 2022</div>
-                            <h2>Software Engineer</h2>
-                            <h4> BlackRock </h4>
-                            <p>
-                                - Automated Azure server uptime monitoring using Java and Spring framework, created a pinger server architecture that cut manual check times by 90%<br>
-- Engineered a highly efficient server infrastructure utilizing the Java Spring framework on Azure, achieving a 90% reduction in validation times. Used real-time database monitoring and data validation by managing inter-server communications with semaphores and broadcast messages<br>
- - Systematically engineered and deployed server infrastructure, starting with a prototype for initial testing, advancing through development, optimization, and culminating in a successful production rollout<br>
- - Implemented Apache Freemarker for dynamic content separation, enabling efficient backend-to-frontend data flow. Simplified the process for creation of reports hence improving report readability and overall user experience<br>
- - Learnt about Agile development practices, participating in daily stand-ups, sprint planning, and retrospectives
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">May 2021 - August 2021</div>
-                            <h2>Research Assistant</h2>
-                            <h4>Parallel Programming Laboratory</h4>
-                            <p>
-                                - Developed a Java-based data analytics and visualization tool using XChart to visualize log file data as graphs. The tool could give a comprehensive analysis of a certain programming language by analyzing different log files allowing for enhanced data interpretation and easier decision making <br>
- - Achieved a 50% increase in storage efficiency and processing speed by implementing sparse data structures using a HashMap<br>
- - Spearheaded the tool's CI/CD integration, optimizing performance for use by multiple teams and incorporated feedback to enhance functionality
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">June 2020 - May 2022</div>
-                            <h2>Co-Founder and Full Stack Developer</h2>
-                            <h4>Voc-AB</h4>
-                            <p>
-                                - Launched Voc-AB , a cross-platform mobile app on Google Play Store and App Store, using React Native, JavaScript, and integrating
- Firebase for dynamic real-time content updates
-                                <br>
-                                - Collaborated within a multidisciplinary team of five to create an application that improves SAT/GRE vocabulary preparation by automating Python (Selenium) web scraping and streamlining data management
-                                <br>
-                                - Emphasized user-friendly design with responsive techniques, including Flexbox, for seamless user experience across various device sizes.
-                               
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">May 2020 - August 2020</div>
-                            <h2>Software Developer</h2>
-                            <h4>Codezin Technology Solutions Private Limited</h4>
-                            <p>
-                                - Engineered a CNN-based Machine Learning model using Python, OpenCV, Keras, SciPy, and PyTorch for real-time facial recognition <br>
-- Optimized video processing, reducing latency from 500ms to 100ms, by replacing an underperforming Python library with a more effective solution<br>
-- Spearheaded an initiative to improve model inclusivity by selecting a globally representative dataset, ensuring equitable facial recognition across diverse demographic groups, demonstrating commitment to ethical AI principles
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">August 2019 - May 2020</div>
-                            <h2>
-                                Computational Physics Researcher</h2>
-                            <h4>Crackling Team, Physics Department, UIUC</h4>
-                            <p>
-                                Created Python models using SciPy to predict avalanche behavior in light flux data of Class M stars
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">October 2020 - May 2021</div>
-                            <h2>Website Software Developer</h2>
-                            <h4>ElevateU</h4>
-                            <p>
-                                - Developed a landing page using React, JavaScript, HTML and CSS and connected it to a Firebase database
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">May 2021 - May 2023</div>
-                            <h2>
-                                Project Manager and Full Stack Developer</h2>
-                            <h4>Knobull</h4>
-                            <p>
-                                Managed a team to make front-end updates to the main website and deployed it on Heroku
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">December 2021 - May 2023</div>
-                            <h2>Programming Teaching Assistant</h2>
-                            <h4>Codecafe</h4>
-                            <p>
-                                - Developed a landing page using React, JavaScript, HTML and CSS and connected it to a Firebase database
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <h4>Cloud & Data</h4>
+            <div class="skill-tag-group">
+              <span>AWS EC2</span><span>Lambda</span><span>S3</span>
+              <span>GCP</span><span>Azure</span><span>MongoDB</span>
+              <span>PostgreSQL</span><span>Airflow</span>
             </div>
+          </div>
         </div>
-        <!-- Job Experience End -->
-
-        <!-- Portfolio Start -->
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Portfolio</p>
-                    <h2>My Excellent Portfolio</h2>
-                </div>
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/VocabLogo.jpeg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Vocab App</h3>
-                                <a class="btn" href="https://github.com/dhruvr4/Vocab"  target= "_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/KnobullLogo.jpeg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Knobull Repository</h3>
-                                <a class="btn" href="https://github.com/dhruvr4/knobull" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/F1Logo.jpeg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Formula One</h3>
-                                <a class="btn" href="https://github.com/dhruvr4/CS_411_F1" target = "_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/BollywoodLogo.jpeg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Bollywood Analysis</h3>
-                                <a class="btn" href=https://github.com/dhruvr4/BollywoodAnalysis target= "_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/CheekyChuchuLogo.jpeg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>CheekyChuchu</h3>
-                                <a class="btn" href=https://github.com/dhruvr4/CatchChuchu  target= "_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/StudyMatesLogo.jpeg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>StudyMates Server</h3>
-                                <a class="btn" href=https://github.com/dhruvr4/frnds-server  target= "_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/InfiniteMatrixLogo.jpeg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Unreal Engine Game</h3>
-                                <a class="btn" href=https://github.com/dhruvr4/InfiniteMatrix  target= "_blank">+</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="fas fa-brain"></i>
             </div>
-        </div>
-        <!-- Portfolio End -->
-
-        <!-- Footer Start -->
-        <div class="footer wow fadeIn" id="footer" data-wow-delay="0.3s">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Dhruv Rajgarhia</h2>
-                        <div class="footer-menu">
-                            <p>+1 (908) 392 - 0328
-                            </p>
-                            <p>dhruvrajgarhia1@gmail.com</p>
-                           
-                        </div>
-                        <div class="footer-social">
-                            <a href="https://www.instagram.com/dhruvr123/"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/dhruvr4/"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/dhruvr4"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <h4>AI / ML</h4>
+            <div class="skill-tag-group">
+              <span>LLMs</span><span>LangChain</span><span>LangGraph</span>
+              <span>RAG</span><span>ChromaDB</span><span>NLP</span>
+              <span>TensorFlow</span><span>PyTorch</span><span>NER</span>
             </div>
+          </div>
         </div>
-        <!-- Footer End -->
-        
-        
-        <!-- Back to top button -->
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.25s">
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h4>Frontend & Tools</h4>
+            <div class="skill-tag-group">
+              <span>React</span><span>React Native</span><span>Node.js</span>
+              <span>FastAPI</span><span>Docker</span><span>Git</span>
+              <span>Firebase</span><span>Angular</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" class="section section-white">
+    <div class="container">
+      <div class="section-header text-center wow fadeInUp" data-wow-delay="0.1s">
+        <div class="section-label">Career</div>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="timeline mt-5">
+
+        <div class="tl-item wow fadeInUp" data-wow-delay="0.1s">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-meta">
+              <span class="tl-date">Sep 2023 – Present</span>
+              <span class="tl-badge tl-badge-current">Current</span>
+            </div>
+            <h3 class="tl-role">Data & AI Engineer</h3>
+            <h4 class="tl-company">Global Action Alliance</h4>
+            <ul class="tl-bullets">
+              <li>Built distributed data ingestion pipelines on AWS EC2 using Python services to scrape, clean, and normalize data from multiple external sources</li>
+              <li>Designed ETL workflows with RAG-powered modules and domain-specific embeddings to generate structured intelligence from SEC filings, <strong>cutting manual research time by 80%</strong></li>
+              <li>Engineered an autonomous LLM-powered agent to research <strong>400K+ healthcare companies</strong> across 30+ fields spanning technology, financials, and operations</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Python</span><span>AWS EC2</span><span>RAG</span><span>LLMs</span><span>MongoDB</span><span>ETL</span>
+            </div>
+          </div>
         </div>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+        <div class="tl-item wow fadeInUp" data-wow-delay="0.15s">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-meta">
+              <span class="tl-date">Aug 2024 – Apr 2025</span>
+            </div>
+            <h3 class="tl-role">Lead Backend Engineer</h3>
+            <h4 class="tl-company">Nora Music</h4>
+            <ul class="tl-bullets">
+              <li>Developed backend architecture using Python, integrating third-party APIs and LLMs for data cleaning, structuring, and storage in Planetscale SQL</li>
+              <li>Optimized album ingestion time <strong>from 60 to 5 minutes</strong> by designing a parallelized scraping system deployed across AWS EC2 instances and Lambda functions</li>
+              <li>Contributed to CI/CD-driven development via Agile sprints (Linear, Notion)</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Python</span><span>AWS EC2</span><span>Lambda</span><span>LLMs</span><span>Planetscale</span>
+            </div>
+          </div>
+        </div>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+        <div class="tl-item wow fadeInUp" data-wow-delay="0.2s">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-meta">
+              <span class="tl-date">Apr 2024 – Aug 2024</span>
+            </div>
+            <h3 class="tl-role">Full Stack Software Engineer</h3>
+            <h4 class="tl-company">Altius Consulting</h4>
+            <ul class="tl-bullets">
+              <li>Built a portfolio management internal tool in React + Node.js + DocumentDB on AWS, <strong>reducing business case development time by 75%</strong></li>
+              <li>Implemented REST API layer between frontend and backend with full AWS deployment</li>
+            </ul>
+            <div class="tl-tags">
+              <span>React</span><span>Node.js</span><span>AWS</span><span>DocumentDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item wow fadeInUp" data-wow-delay="0.25s">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-meta">
+              <span class="tl-date">Jun 2022 – Aug 2022</span>
+            </div>
+            <h3 class="tl-role">Software Analyst</h3>
+            <h4 class="tl-company">BlackRock</h4>
+            <ul class="tl-bullets">
+              <li>Automated Azure server uptime monitoring using Java + Spring, <strong>cutting manual check times by 90%</strong></li>
+              <li>Implemented Apache Freemarker for backend-to-frontend data flow; shipped to production</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Java</span><span>Spring</span><span>Azure</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item wow fadeInUp" data-wow-delay="0.3s">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-meta">
+              <span class="tl-date">Jun 2020 – Jul 2022</span>
+            </div>
+            <h3 class="tl-role">Founder & Full Stack Developer</h3>
+            <h4 class="tl-company">NerdDevz</h4>
+            <ul class="tl-bullets">
+              <li>Launched VocAB, a cross-platform mobile app on Google Play Store and iOS App Store, using React Native, JavaScript, and Firebase for real-time content updates</li>
+            </ul>
+            <div class="tl-tags">
+              <span>React Native</span><span>Firebase</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item wow fadeInUp" data-wow-delay="0.35s">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-meta">
+              <span class="tl-date">Jan 2021 – May 2023</span>
+            </div>
+            <h3 class="tl-role">Project Manager & Lead Developer</h3>
+            <h4 class="tl-company">Knobull</h4>
+            <ul class="tl-bullets">
+              <li>Led frontend development and Heroku deployment; managed team through product iterations</li>
+            </ul>
+            <div class="tl-tags">
+              <span>React</span><span>Heroku</span><span>Team Lead</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header text-center wow fadeInUp" data-wow-delay="0.1s">
+        <div class="section-label">Work</div>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <p class="projects-category-label wow fadeInUp" data-wow-delay="0.1s">AI / LLM Systems</p>
+      <div class="row">
+        <div class="col-lg-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <a href="https://github.com/dhruvr1872/rag-pipeline" target="_blank" class="project-card project-card-featured">
+            <div class="project-card-top">
+              <div class="project-card-icon-wrap">
+                <i class="fas fa-search"></i>
+              </div>
+              <span class="project-chip">RAG</span>
+            </div>
+            <h4 class="project-title">RAG Pipeline</h4>
+            <p class="project-desc">End-to-end retrieval pipeline with hybrid dense+BM25 retrieval, reranking, citation-grounded generation, and RAGAS evaluation.</p>
+            <div class="project-tech">
+              <span>Python</span><span>ChromaDB</span><span>LangChain</span><span>FastAPI</span>
+            </div>
+            <span class="project-github-link">View on GitHub <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+
+        <div class="col-lg-6 mb-4 wow fadeInUp" data-wow-delay="0.15s">
+          <a href="https://github.com/dhruvr1872/ai-research-agent" target="_blank" class="project-card project-card-featured">
+            <div class="project-card-top">
+              <div class="project-card-icon-wrap">
+                <i class="fas fa-robot"></i>
+              </div>
+              <span class="project-chip">Agent</span>
+            </div>
+            <h4 class="project-title">AI Research Agent</h4>
+            <p class="project-desc">LangGraph multi-agent system with planner → researcher → analyst → writer pipeline and Tavily web search integration.</p>
+            <div class="project-tech">
+              <span>LangGraph</span><span>Python</span><span>Tavily</span><span>OpenAI</span>
+            </div>
+            <span class="project-github-link">View on GitHub <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+
+        <div class="col-lg-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+          <a href="https://github.com/dhruvr1872/text-to-sql-agent" target="_blank" class="project-card project-card-featured">
+            <div class="project-card-top">
+              <div class="project-card-icon-wrap">
+                <i class="fas fa-database"></i>
+              </div>
+              <span class="project-chip">Agent</span>
+            </div>
+            <h4 class="project-title">Text-to-SQL Agent</h4>
+            <p class="project-desc">ReAct agent that converts natural language to SQL, executes against a real database, and self-corrects on query errors.</p>
+            <div class="project-tech">
+              <span>Python</span><span>SQLAlchemy</span><span>FastAPI</span><span>OpenAI</span>
+            </div>
+            <span class="project-github-link">View on GitHub <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+
+        <div class="col-lg-6 mb-4 wow fadeInUp" data-wow-delay="0.25s">
+          <a href="https://github.com/dhruvr1872/etl-ai-pipeline" target="_blank" class="project-card project-card-featured">
+            <div class="project-card-top">
+              <div class="project-card-icon-wrap">
+                <i class="fas fa-stream"></i>
+              </div>
+              <span class="project-chip">ETL</span>
+            </div>
+            <h4 class="project-title">ETL AI Pipeline</h4>
+            <p class="project-desc">Airflow DAG that ingests articles, enriches with LLM classification and entity extraction, then loads to warehouse and ChromaDB.</p>
+            <div class="project-tech">
+              <span>Airflow</span><span>Python</span><span>ChromaDB</span><span>Docker</span>
+            </div>
+            <span class="project-github-link">View on GitHub <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+
+      <p class="projects-category-label wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 16px;">Data & Other</p>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <a href="https://github.com/dhruvr1872/TrustLab-internship" target="_blank" class="project-card project-card-sm">
+            <div class="project-card-sm-icon"><i class="fas fa-file-alt"></i></div>
+            <h4 class="project-title">TrustLab NLP Pipeline</h4>
+            <p class="project-desc">CommonCrawl pipeline classifying COVID economic-impact articles at scale using NLP and NER.</p>
+            <div class="project-tech">
+              <span>Python</span><span>NLP</span><span>NER</span>
+            </div>
+            <span class="project-github-link">GitHub <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.15s">
+          <a href="https://github.com/dhruvr1872/BollywoodAnalysis" target="_blank" class="project-card project-card-sm">
+            <div class="project-card-sm-icon"><i class="fas fa-chart-bar"></i></div>
+            <h4 class="project-title">Bollywood Analysis</h4>
+            <p class="project-desc">Exploratory data analysis on Bollywood filmography using IMDB API and pandas.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Pandas</span><span>EDA</span>
+            </div>
+            <span class="project-github-link">GitHub <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+          <a href="https://github.com/dhruvr1872/Vocab" target="_blank" class="project-card project-card-sm">
+            <div class="project-card-sm-icon"><i class="fas fa-book"></i></div>
+            <h4 class="project-title">VocAB App</h4>
+            <p class="project-desc">Cross-platform vocabulary builder with spaced repetition, Firebase backend, and leaderboards.</p>
+            <div class="project-tech">
+              <span>React Native</span><span>Firebase</span>
+            </div>
+            <span class="project-github-link">GitHub <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.1s">
+          <div class="section-label">Academic</div>
+          <h2 class="section-title">Education</h2>
+          <div class="edu-card">
+            <div class="edu-badge">UIUC</div>
+            <div class="edu-info">
+              <h3 class="edu-school">University of Illinois at Urbana-Champaign</h3>
+              <p class="edu-line"><strong>B.S. Computer Science</strong> <span class="gpa-badge">3.9 GPA</span></p>
+              <p class="edu-line">B.S. Physics</p>
+              <p class="edu-line">Certificate in Technology Entrepreneurship</p>
+              <p class="edu-year">May 2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight" data-wow-delay="0.2s">
+          <div class="edu-highlights">
+            <div class="edu-highlight-row">
+              <i class="fas fa-check-circle"></i>
+              <span>3.9/4.0 GPA in Computer Science</span>
+            </div>
+            <div class="edu-highlight-row">
+              <i class="fas fa-check-circle"></i>
+              <span>Dual degree: Computer Science + Physics</span>
+            </div>
+            <div class="edu-highlight-row">
+              <i class="fas fa-check-circle"></i>
+              <span>Certificate in Technology Entrepreneurship</span>
+            </div>
+            <div class="edu-highlight-row">
+              <i class="fas fa-check-circle"></i>
+              <span>Research at Parallel Programming Lab & Physics Dept</span>
+            </div>
+            <div class="edu-highlight-row">
+              <i class="fas fa-check-circle"></i>
+              <span>Top-5 CS program in the United States</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT / FOOTER ===================== -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <h2 class="footer-name">Let's Work Together</h2>
+        <p class="footer-tagline">Open to Data Engineering, AI Engineering, and Backend roles.</p>
+        <a href="mailto:dhruvrajgarhia2@gmail.com" class="footer-email">dhruvrajgarhia2@gmail.com</a>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/dhruvrajgarhia2" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/dhruvr1872" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:dhruvrajgarhia2@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">© 2026 Dhruv Rajgarhia · Houston, TX</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#home" class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></a>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
